@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fermentación del Maíz para Producir Alcohol Etílico</title>
+   <link rel="stylesheet" href="alcohol.css"
+</head>
+<body>
+    <div class="container">
+        <h1>🌽 Fermentación del Maíz 🧪</h1>
+        <p class="subtitle">Producción de Alcohol Etílico - ¡Haz clic en cada etapa para aprender!</p>
+
+        <button class="boton-instrucciones" onclick="mostrarInstrucciones()">
+            📚 ¿Cómo funciona la fermentación?
+        </button>
+
+        <div class="proceso-container">
+            <!-- ETAPA 1 -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">1</div>
+                <h2 class="etapa-titulo">🌽 Materia Prima: Maíz</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        Todo comienza con el maíz, que contiene <strong>almidón</strong>, un polisacárido (azúcar complejo) formado por muchas moléculas de glucosa unidas.
+                    </p>
+                    
+                    <div class="formula-box">
+                        <h3>Fórmula del Almidón:</h3>
+                        <div class="formula">(C₆H₁₀O₅)ₙ</div>
+                        <p><em>donde "n" puede ser miles de unidades</em></p>
+                    </div>
+
+                    <div class="estructura-molecular">
+                        <h4>Estructura del Almidón:</h4>
+                        <div class="molecula">
+    O          O          O
+    ║          ║          ║
+-O-CH₂       -O-CH₂       -O-CH₂
+    |          |          |
+   CH-O-     CH-O-     CH-O-
+    |          |          |
+(cadena de glucosas enlazadas)
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>💡 Dato curioso:</strong> Un grano de maíz contiene aproximadamente 70% de almidón.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flecha">⬇️</div>
+
+            <!-- ETAPA 2 -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">2</div>
+                <h2 class="etapa-titulo">💧 Molienda y Cocción</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        El maíz se muele y se mezcla con agua. Luego se calienta a 60-90°C para romper las paredes celulares y liberar el almidón.
+                    </p>
+                    
+                    <div class="info-box">
+                        <strong>🔬 Proceso físico:</strong> El calentamiento causa gelatinización del almidón, haciéndolo más accesible para las enzimas.
+                    </div>
+
+                    <div class="formula-box">
+                        <h3>Cambio de estado:</h3>
+                        <div class="formula">Almidón sólido + H₂O + Calor → Almidón gelatinizado</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flecha">⬇️</div>
+
+            <!-- ETAPA 3 -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">3</div>
+                <h2 class="etapa-titulo">🧬 Sacarificación (Hidrólisis del Almidón)</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        Se agregan enzimas (amilasas) que rompen el almidón en azúcares simples, principalmente <strong>glucosa</strong>.
+                    </p>
+                    
+                    <div class="formula-box">
+                        <h3>Reacción de Hidrólisis:</h3>
+                        <div class="formula">(C₆H₁₀O₅)ₙ + n H₂O → n C₆H₁₂O₆</div>
+                        <p><em>Almidón + Agua → Glucosa</em></p>
+                    </div>
+
+                    <div class="estructura-molecular">
+                        <h4>Molécula de Glucosa:</h4>
+                        <div class="molecula">
+      CH₂OH
+       |
+   H-C-OH
+       |
+  HO-C-H
+       |
+   H-C-OH
+       |
+   H-C-OH
+       |
+      CHO
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>⚗️ Condiciones:</strong> Temperatura 60-65°C, pH 5.5, tiempo: 1-2 horas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flecha">⬇️</div>
+
+            <!-- ETAPA 4 -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">4</div>
+                <h2 class="etapa-titulo">🦠 Fermentación Alcohólica</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        Se agregan levaduras (generalmente <em>Saccharomyces cerevisiae</em>) que transforman la glucosa en <strong>alcohol etílico (etanol)</strong> y dióxido de carbono.
+                    </p>
+                    
+                    <div class="formula-box">
+                        <h3>Reacción de Fermentación:</h3>
+                        <div class="formula">C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ + Energía</div>
+                        <p><em>Glucosa → Etanol + Dióxido de carbono</em></p>
+                    </div>
+
+                    <div class="estructura-molecular">
+                        <h4>Estructura del Etanol:</h4>
+                        <div class="molecula">
+    H   H
+    |   |
+H - C - C - O - H
+    |   |
+    H   H
+
+(C₂H₅OH o CH₃CH₂OH)
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>🌡️ Condiciones:</strong> Temperatura 25-35°C, ambiente anaeróbico (sin oxígeno), tiempo: 2-5 días.
+                    </div>
+
+                    <div class="info-box">
+                        <strong>💨 Observación:</strong> Durante la fermentación se liberan burbujas de CO₂, ¡por eso se ve espuma!
+                    </div>
+                </div>
+            </div>
+
+            <div class="flecha">⬇️</div>
+
+            <!-- ETAPA 5 -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">5</div>
+                <h2 class="etapa-titulo">🔥 Destilación</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        Para separar el etanol del agua, se calienta la mezcla. El etanol hierve a 78°C y el agua a 100°C, permitiendo separar ambos líquidos.
+                    </p>
+                    
+                    <div class="formula-box">
+                        <h3>Propiedades Físicas:</h3>
+                        <div class="formula">
+                            Punto de ebullición del Etanol: 78.4°C<br>
+                            Punto de ebullición del Agua: 100°C
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>🔬 Proceso:</strong> El vapor que contiene más etanol se condensa en un recipiente separado, aumentando su concentración de 10-15% a 95%.
+                    </div>
+
+                    <div class="estructura-molecular">
+                        <h4>Etanol Puro Obtenido:</h4>
+                        <div class="molecula">
+C₂H₅OH (líquido)
+
+Propiedades:
+- Incoloro
+- Olor característico
+- Densidad: 0.789 g/cm³
+- Soluble en agua
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flecha">⬇️</div>
+
+            <!-- PRODUCTO FINAL -->
+            <div class="etapa" onclick="toggleEtapa(this)">
+                <div class="etapa-numero">✓</div>
+                <h2 class="etapa-titulo">🎉 Producto Final: Alcohol Etílico</h2>
+                <div class="etapa-contenido">
+                    <p class="descripcion">
+                        ¡Obtuvimos alcohol etílico! Este compuesto tiene múltiples usos: combustible (bioetanol), desinfectante, en la industria química y farmacéutica.
+                    </p>
+                    
+                    <div class="formula-box">
+                        <h3>Balance General del Proceso:</h3>
+                        <div class="formula">
+                            1 kg de maíz → ~300 ml de etanol<br>
+                            (eficiencia aproximada del 30%)
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>🌱 Beneficio ambiental:</strong> El etanol de maíz es un biocombustible renovable que reduce las emisiones de CO₂ comparado con los combustibles fósiles.
+                    </div>
+
+                    <div class="info-box">
+                        <strong>⚠️ Importante:</strong> El etanol producido industrialmente debe desnaturalizarse (hacerse no apto para consumo humano) si se usa para otros fines.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleEtapa(elemento) {
+            // Cerrar todas las etapas
+            const etapas = document.querySelectorAll('.etapa');
+            etapas.forEach(e => {
+                if (e !== elemento) {
+                    e.classList.remove('active');
+                }
+            });
+            
+            // Abrir/cerrar la etapa clickeada
+            elemento.classList.toggle('active');
+        }
+
+        function mostrarInstrucciones() {
+            alert('🔬 ¿CÓMO FUNCIONA LA FERMENTACIÓN?\n\n' +
+                  '1️⃣ Los microorganismos (levaduras) son seres vivos muy pequeños que necesitan energía para vivir.\n\n' +
+                  '2️⃣ Obtienen esta energía rompiendo las moléculas de glucosa (azúcar) en un proceso llamado FERMENTACIÓN.\n\n' +
+                  '3️⃣ Como resultado, producen alcohol etílico y dióxido de carbono.\n\n' +
+                  '4️⃣ Este proceso ocurre SIN OXÍGENO (anaeróbico).\n\n' +
+                  '¡Haz clic en cada etapa para aprender más! 🌽➡️🧪➡️🍶');
+        }
+
+        // Abrir la primera etapa automáticamente
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.etapa').classList.add('active');
+        });
+    </script>
+</body>
+</html>
